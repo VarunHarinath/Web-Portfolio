@@ -4,6 +4,8 @@ import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
 import GlassCard from '../components/GlassCard';
 import ragImg from '../assets/rag_preview.png';
 import cloudImg from '../assets/cloud_preview.png';
+import eventauraHero from '../assets/eventaura_hero.png';
+import envsyncHero from '../assets/envsync_hero.png';
 
 const Projects = () => {
   const projects = [
@@ -19,7 +21,7 @@ const Projects = () => {
       ),
       impact: "Supported 1000+ users, improved deployment efficiency by ~40% using Docker & CI/CD, and reduced infrastructure cost by 8% through cloud optimization.",
       tech: ["React", "Node.js", "Express", "MongoDB", "Docker", "Cloud"],
-      image: "/Users/varunharinath/.gemini/antigravity/brain/f7930c64-dd8e-45e9-8235-eca75a5fe500/eventaura_screenshot_mockup_1772477503775.png",
+      image: eventauraHero,
       github: "https://github.com/EventAura",
       demo: "https://Eventauraa.tech",
       demoLabel: "Eventauraa.tech"
@@ -30,7 +32,7 @@ const Projects = () => {
       description: "A developer platform to manage environment variables and secrets across projects and environments with secure, API-driven workflows.",
       impact: "Designed a scalable project → environment configuration structure with secure API-driven workflows for managing environment variables across services.",
       tech: ["Node.js", "PostgreSQL", "AWS", "SDK (Python & JS)", "Docker"],
-      image: "/Users/varunharinath/.gemini/antigravity/brain/f7930c64-dd8e-45e9-8235-eca75a5fe500/envsync_screenshot_mockup_1772477490014.png",
+      image: envsyncHero,
       github: "https://github.com/VarunHarinath/EnvSync",
       demo: "https://envsync.me",
       demoLabel: "envsync.me"
@@ -89,12 +91,23 @@ const Projects = () => {
               
               <div className="flex-1">
                 <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-xl font-bold">{project.title}</h3>
+                  <div className="flex flex-col gap-1">
+                    <div className="flex items-center gap-2">
+                      <span className={`text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full border ${
+                        project.status === 'Shipped' ? 'bg-emerald-500/10 border-emerald-500/20 text-emerald-500' :
+                        project.status === 'Building' ? 'bg-amber-500/10 border-amber-500/20 text-amber-500' :
+                        'bg-purple-500/10 border-purple-500/20 text-purple-500'
+                      }`}>
+                        {project.status}
+                      </span>
+                    </div>
+                    <h3 className="text-xl font-bold">{project.title}</h3>
+                  </div>
                   <div className="flex gap-3">
-                    <a href={project.github} className="text-slate-400 hover:text-white transition-colors">
+                    <a href={project.github} className="text-slate-400 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
                       <Github className="w-5 h-5" />
                     </a>
-                    <a href={project.demo} className="text-slate-400 hover:text-white transition-colors">
+                    <a href={project.demo} className="text-slate-400 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="w-5 h-5" />
                     </a>
                   </div>
