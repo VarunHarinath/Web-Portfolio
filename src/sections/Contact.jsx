@@ -44,9 +44,9 @@ const Contact = () => {
             <div className="flex flex-col justify-center items-center md:items-start text-left gap-8">
               <div>
                 <h4 className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4">Direct Link</h4>
-                <a href="mailto:varun@example.com" className="text-xl font-bold flex items-center gap-3 hover:text-blue-500 transition-colors">
+                <a href="mailto:varunharinath.rudravally@gmail.com" className="text-xl font-bold flex items-center gap-3 hover:text-blue-500 transition-colors">
                   <Mail className="w-6 h-6" />
-                  varun@example.com
+                  varunharinath.rudravally@gmail.com
                 </a>
               </div>
               

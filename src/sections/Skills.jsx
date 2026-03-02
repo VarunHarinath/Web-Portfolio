@@ -15,24 +15,44 @@ import GlassCard from '../components/GlassCard';
 const Skills = () => {
   const categories = [
     {
-      title: "Frontend Architecture",
+      title: "Frontend",
       icon: <Code className="w-6 h-6 text-blue-500" />,
-      skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Three.js"]
+      skills: ["React", "Next.js", "Tailwind CSS", "Redux"]
     },
     {
-      title: "Backend & Distributed Systems",
+      title: "Backend",
       icon: <Database className="w-6 h-6 text-purple-500" />,
-      skills: ["Node.js", "Express", "FastAPI", "Go", "RabbitMQ", "Redis"]
+      skills: ["Node.js", "Express", "FastAPI", "Django"]
     },
     {
-      title: "AI Engineer Stack",
+      title: "Distributed Systems",
       icon: <Cpu className="w-6 h-6 text-cyan-500" />,
-      skills: ["RAG", "LangChain", "OpenAI API", "Whisper", "Pinecone", "Groq"]
+      skills: ["RabbitMQ", "Redis"]
     },
     {
       title: "Cloud & DevOps",
       icon: <Cloud className="w-6 h-6 text-emerald-500" />,
-      skills: ["AWS", "GCP", "Docker", "Kubernetes", "CI/CD", "Terraform"]
+      skills: ["AWS", "GCP", "Docker", "CI/CD", "Jenkins", "GitHub Actions"]
+    },
+    {
+      title: "Databases",
+      icon: <Database className="w-6 h-6 text-orange-500" />,
+      skills: ["PostgreSQL", "MongoDB", "MySQL"]
+    },
+    {
+      title: "Testing & Automation",
+      icon: <Terminal className="w-6 h-6 text-red-500" />,
+      skills: ["Selenium (Python)"]
+    },
+    {
+      title: "Languages",
+      icon: <Code className="w-6 h-6 text-yellow-500" />,
+      skills: ["JavaScript", "Python", "Java"]
+    },
+    {
+      title: "AI / INTELLIGENT SYSTEMS",
+      icon: <Zap className="w-6 h-6 text-pink-500" />,
+      skills: ["LangChain", "AI Workflow Orchestration", "Model Integration (API-Based)"]
     }
   ];
 
@@ -65,7 +85,7 @@ const Skills = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="grid grid-cols-1 md:grid-cols-2 gap-6"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
       >
         {categories.map((category, idx) => (
           <motion.div key={idx} variants={itemVariants}>

@@ -4,10 +4,10 @@ import GlassCard from '../components/GlassCard';
 
 const About = () => {
   const techStack = [
-    { name: 'Frontend', skills: ['React', 'Next.js', 'Typescript', 'Tailwind', 'Framer Motion'] },
-    { name: 'Backend', skills: ['Node.js', 'Python', 'Go', 'FastAPI', 'Spring Boot'] },
-    { name: 'AI/ML', skills: ['RAG', 'LangChain', 'OpenAI', 'Pinecone', 'Whisper', 'TTS'] },
-    { name: 'Cloud & Systems', skills: ['AWS', 'Docker', 'Kubernetes', 'RabbitMQ', 'Redis'] },
+    { name: 'Frontend', skills: ['React', 'Next.js', 'TypeScript', 'Tailwind'] },
+    { name: 'Backend', skills: ['Node.js', 'FastAPI', 'Django', 'Express'] },
+    { name: 'Infrastructure', skills: ['AWS', 'Docker', 'RabbitMQ', 'Redis'] },
+    { name: 'Databases & Tools', skills: ['PostgreSQL', 'MongoDB', 'GitHub Actions', 'Linux'] },
   ];
 
   return (
@@ -21,13 +21,13 @@ const About = () => {
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Building AI | Crafting Code | Scaling Systems.</h2>
           <p className="text-slate-500 dark:text-slate-400 mb-4 text-lg">
-            I'm a Senior CS student at Pittsburg State University with a passion for architecting intelligent, distributed systems.
+            I’m Varun Harinath Rudravally, a Computer Science student and systems-focused engineer.
           </p>
           <p className="text-slate-500 dark:text-slate-400 mb-4 text-lg">
-            My work revolves around the intersection of RAG-driven AI microservices and world-class, fluid user experiences. Founder of **EventAura**.
+            I build real-world platforms — backend APIs, distributed messaging systems, developer tools, and production-ready cloud deployments.
           </p>
-          <p className="text-slate-500 dark:text-slate-400 text-lg">
-            I thrive on decoding complexity—from RabbitMQ-powered pipelines to responsive, motion-rich frontends.
+          <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed">
+            My focus is scalable system design, clean architecture, and practical engineering impact. 
           </p>
         </motion.div>
 

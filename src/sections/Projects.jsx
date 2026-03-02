@@ -8,31 +8,49 @@ import cloudImg from '../assets/cloud_preview.png';
 const Projects = () => {
   const projects = [
     {
-      title: "AI Research Assistant",
-      description: "A distributed microservices architecture for automated research summarization and intelligent data processing.",
-      impact: "Leveraged RabbitMQ and Node.js to achieve real-time document indexing and summarization.",
-      tech: ["Python", "LangChain", "RabbitMQ", "Node.js", "AWS", "Docker"],
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800", 
-      github: "https://github.com/VarunHarinath/AI-Research-Assistant",
-      demo: "#"
-    },
-    {
       title: "EventAura",
-      description: "Full-stack event management platform designed for scaling community engagement and booking workflows.",
-      impact: "Architected a scalable MongoDB/Node.js backend deployed via GCP and Docker.",
-      tech: ["React", "Node.js", "Express", "MongoDB", "GCP", "Docker"],
-      image: cloudImg,
-      github: "https://github.com/VarunHarinath/EventAura",
-      demo: "#"
+      status: "Shipped",
+      description: (
+        <ul className="list-disc pl-4 space-y-1">
+          <li>Supported 1000+ users with secure authentication</li>
+          <li>Improved deployment efficiency using Docker & CI/CD</li>
+          <li>Reduced server costs through optimized infrastructure</li>
+        </ul>
+      ),
+      impact: "Supported 1000+ users, improved deployment efficiency by ~40% using Docker & CI/CD, and reduced infrastructure cost by 8% through cloud optimization.",
+      tech: ["React", "Node.js", "Express", "MongoDB", "Docker", "Cloud"],
+      image: "/Users/varunharinath/.gemini/antigravity/brain/f7930c64-dd8e-45e9-8235-eca75a5fe500/eventaura_screenshot_mockup_1772477503775.png",
+      github: "https://github.com/EventAura",
+      demo: "https://Eventauraa.tech",
+      demoLabel: "Eventauraa.tech"
     },
     {
-      title: "Intelligent Nutrition System",
-      description: "Personalized nutrition planning platform leveraging intelligent algorithms for dietary recommendations.",
-      impact: "Implemented advanced TS/Next.js frontend with seamless AI model integration.",
-      tech: ["TypeScript", "Next.js", "AI Models", "Tailwind", "Framer Motion"],
+      title: "EnvSync — Developer Environment & Secrets Platform",
+      status: "Building",
+      description: "A developer platform to manage environment variables and secrets across projects and environments with secure, API-driven workflows.",
+      impact: "Designed a scalable project → environment configuration structure with secure API-driven workflows for managing environment variables across services.",
+      tech: ["Node.js", "PostgreSQL", "AWS", "SDK (Python & JS)", "Docker"],
+      image: "/Users/varunharinath/.gemini/antigravity/brain/f7930c64-dd8e-45e9-8235-eca75a5fe500/envsync_screenshot_mockup_1772477490014.png",
+      github: "https://github.com/VarunHarinath/EnvSync",
+      demo: "https://envsync.me",
+      demoLabel: "envsync.me"
+    },
+    {
+      title: "AI Research Assistance",
+      status: "Under Development",
+      description: (
+        <ul className="list-disc pl-4 space-y-1">
+          <li>Built using FastAPI & Node microservices</li>
+          <li>Async communication using message queues</li>
+          <li>Focused on reliability and scalable orchestration</li>
+        </ul>
+      ),
+      impact: "Designed distributed microservices using RabbitMQ to enable async task routing and real-time document processing with scalable worker architecture.",
+      tech: ["FastAPI", "Node.js", "RabbitMQ", "Docker", "Cloud"],
       image: ragImg,
-      github: "https://github.com/VarunHarinath/Intelligent-Nutrition-Recommendation-System",
-      demo: "#"
+      github: "https://github.com/VarunHarinath/AI-Research-Assistant",
+      demo: "#",
+      demoLabel: "Architecture"
     }
   ];
 
@@ -82,9 +100,9 @@ const Projects = () => {
                   </div>
                 </div>
                 
-                <p className="text-slate-500 dark:text-slate-400 text-sm mb-4 leading-relaxed">
+                <div className="text-slate-500 dark:text-slate-400 text-sm mb-4 leading-relaxed">
                   {project.description}
-                </p>
+                </div>
                 
                 <div className="bg-blue-500/5 border border-blue-500/10 rounded-lg p-3 mb-6">
                   <p className="text-xs font-bold text-blue-500 uppercase tracking-tighter mb-1">Measured Impact</p>

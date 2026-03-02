@@ -12,7 +12,7 @@ const Hero = () => {
         className="max-w-4xl mx-auto"
       >
         <span className="px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-500 text-xs font-semibold uppercase tracking-widest mb-6 inline-block">
-          Senior CS @ Pittsburg State University | AI Engineer
+          Full-Stack Engineer • AI Systems Builder • Cloud & Platform Developer
         </span>
         
         <h1 className="text-5xl md:text-8xl font-black tracking-tight mb-8 leading-[1.1]">
@@ -20,8 +20,7 @@ const Hero = () => {
         </h1>
         
         <p className="text-lg md:text-xl text-slate-500 dark:text-slate-400 max-w-2xl mx-auto mb-12">
-          Specializing in RAG-driven AI platforms, distributed microservices, and high-performance cloud architectures. 
-          Bridging the gap between RAG-driven AI microservices and world-class, fluid user experiences.
+          I build and deploy distributed backend systems, developer platforms, and cloud-native applications focused on reliability, scalability, and clean architecture.
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -6,33 +6,41 @@ import GlassCard from '../components/GlassCard';
 const Experience = () => {
   const experiences = [
     {
-      role: "Founder & Lead Developer",
-      company: "EventAura",
-      period: "2023 - Present",
-      impact: [
-        "Developing a full-stack event management platform using React, Node.js, and MongoDB.",
-        "Architected scalable backend infrastructure deployed across GCP and Docker containers.",
-        "Designed and implemented high-fidelity, responsive user interfaces with Tailwind and Framer Motion."
-      ]
-    },
-    {
-      role: "AI Developer (Personal Research)",
-      company: "Distributed AI Architecture",
-      period: "2024 - Present",
-      impact: [
-        "Built an AI Research Assistant leveraging LangChain and RabbitMQ for distributed data processing.",
-        "Optimized RAG (Retrieval-Augmented Generation) pipelines for low-latency intelligent document indexing.",
-        "Integrated multi-model systems utilizing OpenAI, Groq, and Whisper for seamless speech-to-intelligence workflows."
-      ]
-    },
-    {
-      role: "Senior CS Student",
+      role: "Vice President — Data Analytics Club",
       company: "Pittsburg State University",
-      period: "2021 - Present",
+      period: "Sep 2025 – Present",
       impact: [
-        "Maintaining a high academic trajectory while building a robust portfolio of distributed systems and AI agents.",
-        "Actively contributing to open-source projects (EnvSync) and mentoring peers in modern web architecture.",
-        "Specializing in modern technologies including Go, Spring Boot, and deep cloud-native deployments."
+        "Co-lead weekly/monthly sessions on technology trends including AI, cloud, and modern software systems.",
+        "Organize discussions and activities beyond traditional “data analytics” to cover broader engineering topics.",
+        "Support collaborative learning through peer-led sessions and project-focused conversations."
+      ]
+    },
+    {
+      role: "Co-Founder & Lead Software Engineer",
+      company: "EventAura",
+      period: "Jun 2024 – Jul 2025",
+      impact: [
+        "Developed and deployed a full-stack event management platform using React, Node.js, and MongoDB.",
+        "Architected scalable backend infrastructure deployed on Google Cloud Platform using Docker.",
+        "Optimized infrastructure and caching, reducing server costs by 8% and generating ₹5,00,000+ in revenue."
+      ]
+    },
+    {
+      role: "Software Developer Mentor",
+      company: "GirlScript Summer of Code",
+      period: "May 2024 – Aug 2024",
+      impact: [
+        "Mentored and led 10+ students in full-stack development, Git workflows, and debugging practices.",
+        "Improved team coding proficiency by 30% through structured reviews and pair programming."
+      ]
+    },
+    {
+      role: "React Developer Intern",
+      company: "InfraBIM Techno Solutions",
+      period: "May 2024 – Aug 2024",
+      impact: [
+        "Built a React dashboard using Redux for real-time visualization and optimized state management.",
+        "Reduced API calls by 15% through efficient frontend data handling and caching strategies."
       ]
     }
   ];
