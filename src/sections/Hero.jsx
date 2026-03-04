@@ -28,7 +28,11 @@ const Hero = () => {
             View Projects
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
           </a>
-          <a href="/resume.pdf" className="btn-glass flex items-center gap-2 text-slate-600 dark:text-slate-300">
+          <a 
+            href="/resume.pdf" 
+            download="Varun_Harinath_Resume.pdf"
+            className="btn-glass flex items-center gap-2 text-slate-600 dark:text-slate-300"
+          >
             Download Resume
             <Download className="w-4 h-4" />
           </a>

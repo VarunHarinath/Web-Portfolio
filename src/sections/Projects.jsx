@@ -19,7 +19,7 @@ const Projects = () => {
           <li>Reduced server costs through optimized infrastructure</li>
         </ul>
       ),
-      impact: "Supported 1000+ users, improved deployment efficiency by ~40% using Docker & CI/CD, and reduced infrastructure cost by 8% through cloud optimization.",
+      impact: "Supported 1000+ users, improved deployment efficiency by ~10% using Docker & CI/CD, and reduced infrastructure cost by 8% through cloud optimization.",
       tech: ["React", "Node.js", "Express", "MongoDB", "Docker", "Cloud"],
       image: eventauraHero,
       github: "https://github.com/EventAura",
